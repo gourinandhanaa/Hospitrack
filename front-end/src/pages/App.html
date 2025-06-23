@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HospiTrack</title>
+    <link rel="stylesheet" href="App.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <div class="app-container">
+        <nav>
+            <ul>
+                <li><a href="/queue">Login as Patient</a></li>
+                <li><a href="/login">Admin Login</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/queue">Queue</a></li>
+                <li><button id="logout-btn" style="display: none;">Logout</button></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <!-- Content of the current route will be dynamically injected here -->
+        </main>
+    </div>
+
+    <script>
+        // Simulating admin login for demo purposes
+        let isAdmin = false;
+
+        function checkLogin() {
+            const logoutBtn = document.getElementById("logout-btn");
+            if (isAdmin) {
+                logoutBtn.style.display = "block";
+            } else {
+                logoutBtn.style.display = "none";
+            }
+        }
+
+        document.getElementById("logout-btn").addEventListener("click", function() {
+            isAdmin = false;
+            checkLogin();
+            alert("Logged out successfully!");
+        });
+
+        checkLogin();
+    </script>
+</body>
+</html>

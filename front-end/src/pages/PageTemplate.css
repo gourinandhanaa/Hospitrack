@@ -1,0 +1,235 @@
+/* Shared styles for all pages */
+.page-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .patient-form {
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .patient-form select {
+    padding: 8px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  
+  .status-badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .patient-form {
+    display: grid;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .patient-form h3 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .confirm-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  .form-buttons button {
+    flex: 1;
+  }
+  .page-header h1 {
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .back-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .content-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .data-grid {
+    margin-top: 1.5rem;
+  }
+  
+  .admin-action-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-action-button:hover {
+    background-color: #219653;
+  }
+  
+  @media (max-width: 768px) {
+    .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .back-button {
+      width: 100%;
+    }
+  }
+  /* Add these styles to your existing PageTemplate.css */
+
+.doctors-list, .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .doctor-card, .room-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+  }
+  
+  .room-card {
+    border-left-color: #2ecc71;
+  }
+  
+  .doctor-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .specialty {
+    margin: 0;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .timing-info {
+    margin: 1rem 0;
+  }
+  
+  .timing-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .room-stats {
+    margin: 1rem 0;
+  }
+  
+  .room-stats div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .room-stats span:first-child {
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .doctors-list, .rooms-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .patient-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .patient-form input {
+    margin: 5px 0;
+    padding: 6px;
+    width: 100%;
+  }
+  
+  .patient-form button {
+    margin-right: 10px;
+    padding: 6px 12px;
+  }
+  

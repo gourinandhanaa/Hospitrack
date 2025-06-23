@@ -1,0 +1,124 @@
+.doctors-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .doctors-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .doctors-header h1 {
+    color: #2c3e50;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .doctors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3498db;
+  }
+  
+  .doctor-info h3 {
+    margin-top: 0;
+    color: #3498db;
+  }
+  
+  .specialty {
+    margin: 5px 0;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .timing-info {
+    margin: 15px 0;
+  }
+  
+  .timing-info p {
+    margin: 8px 0;
+  }
+  
+  .edit-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #2980b9;
+  }
+  .edit-form input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .button-group button {
+    margin-right: 6px;
+    padding: 6px 12px;
+  }
+  .appointment-button {
+    background-color: #ff6b35;
+    color: white;
+  }
+  
+  .add-doctor-form {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .add-doctor-form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .doctor-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }  
+  .admin-action-button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .admin-action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
